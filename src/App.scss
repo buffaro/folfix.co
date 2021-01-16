@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Sarabun";
+  src: url("./assets/fonts/Sarabun-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "Sarabun";
+}
+.navContainer {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.flexContent {
+  height: -webkit-fill-available;
+  display: flex;
+  background-color: #dadada;
+  .sidebarContainer {
+    display: block;
+    height: 100vh;
+    margin-top: -64px;
+  }
+  .contentContainer {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    width: 100vw;
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+.user {
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 5px;
+  padding: 4px 10px 4px 10px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  img {
+    max-width: 30px;
+    border-radius: 50%;
+  }
+  .userName {
+    display: block;
+    margin-right: 10px;
+    font-size: 1vw;
+    max-width: 150px;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+  }
+}
+
+div {
+  .dropdown-toggle::after {
+    content: none;
+  }
+  .dropdown-menu {
+    max-width: 12rem;
+  }
+}
