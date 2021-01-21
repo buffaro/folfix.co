@@ -17,6 +17,7 @@ import DateRangeIcon from "@material-ui/icons/DateRange";
 import OfflinePinIcon from "@material-ui/icons/OfflinePin";
 import StorageIcon from "@material-ui/icons/Storage";
 import ExtensionIcon from "@material-ui/icons/Extension";
+import { Link } from "react-router-dom";
 function Sidebar(props) {
   return (
     <ProSidebar
@@ -27,11 +28,23 @@ function Sidebar(props) {
     >
       <SidebarContent style={{ paddingTop: "70px" }}>
         <Menu iconShape="circle" popperArrow="true">
-          <MenuItem icon={<SpeedIcon />}>แผงควบคุม</MenuItem>
+          <MenuItem icon={<SpeedIcon />}>
+            แผงควบคุม
+            <Link to="/" />
+          </MenuItem>
           <SubMenu title="งานซ่อม" icon={<BuildIcon />}>
-            <MenuItem>การแจ้งซ่อม</MenuItem>
-            <MenuItem>รายการงานซ่อม</MenuItem>
-            <MenuItem>ส่งซ่อมภายนอก</MenuItem>
+            <MenuItem>
+              การแจ้งซ่อม
+              <Link to="/repair/ticket" />
+            </MenuItem>
+            <MenuItem>
+              รายการงานซ่อม
+              <Link to="/repair/list" />
+            </MenuItem>
+            <MenuItem>
+              ส่งซ่อมภายนอก
+              <Link to="/repair/onsite" />
+            </MenuItem>
           </SubMenu>
           <SubMenu title="บำรุงรักษา" icon={<DateRangeIcon />}>
             <MenuItem>ปฏิทิน</MenuItem>
