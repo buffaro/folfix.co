@@ -27,7 +27,7 @@ function App() {
             <AdminSidebar activeToggle={false} />
           </div>
           <div className="contentContainer">
-            <Switch>
+            <Switch className="contentContainer">
               <Route path="/" exact component={Dashboard} />
               <Route path="/repair/ticket" component={RepairTicket} />
               <Route path="/repair/list" component={RepairList} />
